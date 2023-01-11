@@ -48,7 +48,8 @@ INSTANTIATE_TEST_SUITE_P(TestDDSynth, TestDDSynthDc,
                                  "rd53",
                                  "wim",
                                  "z4",
-                                 "z4ml"),
+                                 "z4ml",
+                                 "misex3"),
                          [](const testing::TestParamInfo<TestDDSynthDc::ParamType>& info) {
                              auto s = info.param;
                              std::replace( s.begin(), s.end(), '-', '_');
